@@ -6,7 +6,7 @@ read URL2
 
 while true; do
 	CONTENT1=$(curl -s "$URL1")
-	CONTENT1=$(curl -s "$URL2")
+	CONTENT2=$(curl -s "$URL2")
 	
 	if [ "$CONTENT1" = "$CONTENT2" ]; then
 		osascript -e 'display dialog "same URL content!!!" with title "URL check"'
